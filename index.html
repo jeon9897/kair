@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대한항공_모바일웹/앱</title>
+  <!-- 1. 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 공통서식(글자모양, 크기, 색상, 링크) -->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <!-- 3. 레이아웃(헤더, 푸터서식) -->
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+  <!-- 4. 메인페이지 서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <!-- 5. 스와이퍼 슬라이드 서식 -->
+  <link href="./css/swiper.css" rel="stylesheet" type="text/css">  
+
+  <!-- css새로운 속성 추가시 자동으로 속성앞에 접두사를 붙여주는 스크립트 -->
+  <script src="./script/prefixfree.min.js"></script>
+
+</head>
+<body>
+  <!-- 상단헤더영역 -->
+  <header>
+    <h1>
+      <a href="index.html" title="상단로고">
+        <img src="./images/txt_logo.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="t_btn">전체메뉴</label>
+    <nav class="gnb">
+      <label for="toggle" class="c_btn">닫기</label>
+      <ul>
+        <li><a href="#" title="">메뉴1</a></li>
+        <li><a href="#" title="">메뉴2</a></li>
+        <li><a href="#" title="">메뉴3</a></li>
+        <li><a href="#" title="">메뉴4</a></li>
+        <li><a href="#" title="">메뉴5</a></li>
+        <li><a href="#" title="">메뉴6</a></li>
+        <li><a href="#" title="">메뉴7</a></li>
+      </ul>
+    </nav>
+
+    <a href="login.html" title="로그인하기" class="login_btn">로그인</a>
+  </header>
+
+  <!-- 메인콘텐츠영역 -->
+  <main>
+    <section class="g_wrap">
+      <h2>대한한공 여행정보</h2>
+      <div class="item1 slide">
+        <div class="swiper mySwiper">
+          <!-- 이미지 목록 -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" title="배너1"><img src="./images/banner01.jpg" alt="배너1"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="배너2"><img src="./images/banner02.jpg" alt="배너2"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="배너3"><img src="./images/banner03.jpg" alt="배너3"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="배너4"><img src="./images/banner04.jpg" alt="배너4"></a>
+            </div>
+          </div>
+          <!-- 콘트롤 버튼 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="item02">
+        <a href="#" title="국내선 예매">
+          <img src="./images/m_img01.jpg" alt="국내선 예매">
+        </a>
+      </div>
+
+      <div class="item03">
+        <a href="#" title="국제선 예매">
+          <img src="./images/m_img02.jpg" alt="국제선 예매">
+        </a>
+      </div>
+
+      <div class="item04">
+        <a href="#" title="스케줄 도착">
+          <img src="./images/m_img03.jpg" alt="스케줄 도착">
+        </a>
+      </div>
+
+      <div class="item05">
+        <a href="#" title="체크인">
+          <img src="./images/m_img04.jpg" alt="체크인">
+        </a>
+      </div>
+
+      <div class="item06">
+        <a href="#" title="예약관리">
+          <img src="./images/m_img05.jpg" alt="예약관리">
+        </a>
+      </div>
+    </section>
+
+    <article class="skypass">
+      <h2>skypass</h2>
+      <a href="#" title="스카이패스">
+        <img src="./images/skypass.jpg" alt="skypass">
+      </a>
+    </article>
+
+  </main>
+
+  <!-- 푸터영역 -->
+  <footer>
+    <nav class="f_lnb">
+      <ul>
+        <li><a href="#" title="개인정보취급방침">개인정보취급방침</a></li>
+        <li><a href="#" title="PC버전보기">PC버전보기</a></li>
+        <li><a href="#" title="앱 다운로드">앱다운로드</a></li>
+      </ul>
+    </nav>
+    <address>
+      <p>Copyright&copy;2023 KOREAN AIR Allrights reserved.</p>
+      <p>사업자등록번호 0000-000-0000 통신판매업 신고번호 : 강서 제00-000</p>
+    </address>
+  </footer>
+
+  <!-- 스와이퍼 슬라이드 스크립트 소스 -->
+  <script src="./script/swiper.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper",{
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

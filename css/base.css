@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* 공통서식 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+body{
+  font-family: 'Nanum Gothic', sans-serif, arial;
+  font-size:13px;
+  color:#333;
+  overflow-x: hidden; /*가로스크롤바 안나옴*/
+}
+a{
+  color:#333;
+  text-decoration:none;
+}
+img{width:100%;/* 이미지크기 자동조절 */}
