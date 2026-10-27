@@ -1,42 +1,34 @@
 @charset "utf-8";
 
-/* 메인서식 main.css */
-main{
-  background: rgb(93,185,210); /* 구형 모바일 버전에서 적용 */
-  background: linear-gradient(180deg, rgba(93,185,210,1) 30%, rgba(204,204,204,1) 30%);
-  /* 크롬, 사파리 브라우저에서 새로나온 속성을 임시로 사용하기 위함 */
-  -webkit-background: linear-gradient(180deg, rgba(93,185,210,1) 30%, rgba(204,204,204,1) 30%);
-  /* ms사에서 만든 브라우저 edge 브라우저 사용자를 위함 */
-  -ms-background: linear-gradient(180deg, rgba(93,185,210,1) 30%, rgba(204,204,204,1) 30%);
-  /* moz 모질라 파이어폭스 브라우저 사용자를 위함 */
-  -moz-background: linear-gradient(180deg, rgba(93,185,210,1) 30%, rgba(204,204,204,1) 30%);
-  /* 오페라 브라우저 사용자를 위함 */
-  -o-background: linear-gradient(180deg, rgba(93,185,210,1) 30%, rgba(204,204,204,1) 30%);
-}
-section > h2{display:none;}
-.g_wrap{
-  padding:2%; 
-  display:grid;
-  grid-gap:5px;
-  grid-template-columns:repeat(3, auto) ;
+/* 메인콘텐츠 서식 */
+main{padding:5px 1.3%;}
+main h2, main h3{display:none;}
+
+/* 그리드 레이아웃 */
+.grid{
+  width:100%;
+  display: grid;
+  grid-gap:10px;
+  grid-template-columns: repeat(3, auto); /*3칸 자동으로 비율 맞게 조정 */
+  grid-template-rows: repeat(3, auto); /* 3줄 자동으로 높이 조정 */
   grid-template-areas:
-    "banner banner right01"
-    "banner banner right02"
-    "bottom01 bottom02 bottom03"
+  "slide slide i01"
+  "slide slide i02"
+  "i03 i04 i05"
   ;
 }
-.item1{
-  grid-area:banner;
-  overflow:hidden;
-  position:relative;
-}
-.item2{grid-area:right01;}
-.item3{grid-area:right02;}
-.item4{grid-area:bottom01;}
-.item5{grid-area:bottom02;}
-.item6{grid-area:bottom03;}
+.grid img, .swiper-slide img, .skypass img{width:100%;}
 
-/* 스카이패스 */
-.skypass{padding-left:10px;}
-.skypass > h2{display:none;}
-.skypass img{}
+/* 그리드 레이아웃에서 자식요소 배치를 위한 이름작성하기  */
+.slide{grid-area:slide;width:100%;overflow:hidden;position:relative;}
+.item1{grid-area:i01;}
+.item2{grid-area:i02;}
+.item3{grid-area:i03;}
+.item4{grid-area:i04;}
+.item5{grid-area:i05;}
+
+/* 스카이패스 서식 */
+.skypass{
+  padding:20px 0px;
+}
+.skypass h3{display:none;}

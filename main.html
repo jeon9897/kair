@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대한항공 모바일 웹/앱 메인화면</title>
+  <!-- 1. css초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 공통서식 -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- 3. 메인화면 서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <!-- 4. swiper 슬라이드 서식 -->
+  <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+
+  <!-- 5. 구글폰트 링크방식 -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> -->
+  
+  <!-- 6. 폰트어썸 라이브러리 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- 7. 메인콘텐츠 서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">   
+</head>
+<body>
+  <!-- 상단 헤더영역 시작 -->
+  <!-- <input type="checkbox" id="toggle"> -->
+  <header>
+    <h1>
+      <a href="main.html" title="">
+        <img src="./images/txt_logo.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <!-- 왼쪽 토글버튼 -->
+    <img src="./images/toggle.png" alt="전체메뉴" id="toggle_btn">
+
+    <!-- 오른쪽 로그인버튼 -->
+    <a href="login.html" title="" id="login_btn">
+      <img src="./images/user1.png" alt="로그인 페이지로 이동">
+    </a>
+  </header>
+
+  <!-- 내비게이션 -->
+  <nav id='navi'>
+    <!-- 닫기 버튼 -->
+    <i class="fas fa-times" id="close_btn"></i>
+
+    <ul id="gnb">
+      <li><a href="#" title="">메인메뉴1<i class="fas fa-angle-down"></i></a>
+        <!-- 서브메뉴 -->
+        <ul class="sub act">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="">메인메뉴2<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="">메인메뉴3<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="">메인메뉴4<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="">메인메뉴5<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="">메인메뉴6<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+          <li><a href="#" title="">서브메뉴</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 메인콘텐츠 시작 -->
+  <main>
+    <section class="grid">
+      <h2>메인콘텐츠</h2>
+      <article class="slide">
+        <h3>슬라이드 배너</h3>
+        <div class="swiper mslide">
+          <!-- 슬라이드 목록 -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/banner01.jpg" alt="슬라이드1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner02.jpg" alt="슬라이드2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner03.jpg" alt="슬라이드3">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner04.jpg" alt="슬라이드4">
+            </div>
+          </div>
+
+          <!-- 콘트롤버튼  -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+
+      <article class="item1">
+        <h3>국내선 예매</h3>
+        <a href="#" title="">
+          <img src="./images/m_img01.jpg" alt="국내선">
+        </a>
+      </article>
+
+      <article class="item2">
+        <h3>국제선 예매</h3>
+        <a href="#" title="">
+          <img src="./images/m_img02.jpg" alt="국제선">
+        </a>
+      </article>
+
+      <article class="item3">
+        <h3>예약관리</h3>
+        <a href="#" title="">
+          <img src="./images/m_img03.jpg" alt="예약관리">
+        </a>
+      </article>
+
+      <article class="item4">
+        <h3>체크인</h3>
+        <a href="#" title="">
+          <img src="./images/m_img04.jpg" alt="체크인">
+        </a>
+      </article>
+
+      <article class="item5">
+        <h3>스케쥴 도착</h3>
+        <a href="#" title="">
+          <img src="./images/m_img05.jpg" alt="스케쥴 도착">
+        </a>
+      </article>
+    </section>
+
+    <!-- 스카이패스 콘텐츠 영역 -->
+    <article class="skypass">
+      <h3>스카이 패스 콘텐츠</h3>
+      <a href="#" title="">
+        <img src="./images/skypass.jpg" alt="스카이패스">
+      </a>
+    </article>
+  </main>
+
+  <!-- 하단 푸터영역 시작 -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#" title="">개인정보처리방침</a></li>
+        <li><a href="http://www.koreanair.com" title="">PC버전보기</a></li>
+        <li><a href="#" title="">앱다운로드</a></li>
+      </ul>
+    </nav>
+    <p>Copyright&copy; 대한항공 모바일 웹/앱 allrights reserved.</p>
+    <address>
+      사업자등록번호 0000-000-0000 통신판매업 신고번호 : 강서 제00-0000
+    </address>
+
+  </footer>
+
+  <!-- 자바스크립트 공통 UX -->
+  <script src="./script/common.js"></script>
+
+  <!-- 스와이퍼 슬라이드 -->
+  <script src="./script/swiper.js"></script>
+  <script>
+    //메인 슬라이드 스크립트
+    var swiper = new Swiper('.mslide',{
+      spaceBetween:0,
+      centerSlides:true,
+      autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+      },
+      pagination:{
+        el:'.swiper-pagination',
+        clickable:true,
+      }
+    });
+  </script>
+</body>
+</html>
