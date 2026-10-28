@@ -65,11 +65,34 @@ mnu.forEach(function(item){
 });
 
 //로그인폼
-let id_txt = document.getElementById('username');
-let pw_txt = document.getElementById('password');
+const user_Id = document.getElementById('username');
+const user_Pw = document.getElementById('password');
 const login_btn = document.querySelector('.btn-login');
 
 // 로그인 버튼
 login_btn.addEventListener('click', function(){
-  console.log(id_txt.value, pw_txt.value);
+  console.log(user_Id.value, user_Pw.value);
+
+  if(user_Id.value.trim()===''){
+    alert('아이디를 입력해주세요.');
+    return;
+  }
+
+  if(user_Pw.value.trim()===''){
+    alert('패스워드를 입력해주세요.');
+    return;
+  }
+
+  if(user_Id.value!=='abcd'){
+    alert('해당 아이디가 존재하지 않습니다.');
+    return;
+  }
+
+  if(user_Pw.value!=='1234'){
+    alert('패스워드가 일치하지 않습니다.');
+    return;
+  }
+
+  alert('로그인 성공');
+
 });
