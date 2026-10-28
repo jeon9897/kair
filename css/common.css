@@ -32,16 +32,20 @@ header{
 
 header > h1{
   text-align:center;
-  padding-top:20px;
+  padding-top:23px;
 }
-header > h1 img{height:28px;}
+header > h1 img{height:24px;}
 
 /* 왼쪽 토글, 오른쪽 로그인 버튼 서식 */
 #toggle_btn, #login_btn{
-  position:absolute;top:10px;
+  position:absolute;top:15px;
 }
-#toggle_btn{left:10px;cursor:pointer;}
+#toggle_btn{
+  left:10px;cursor:pointer;
+  width:40px;
+}
 #login_btn{right:10px;}
+#login_btn img{width:38px;}
 
 /* 내비게이션(gnb) 서식 */
 #navi{
@@ -145,12 +149,3 @@ footer p, footer address{
   line-height:20px;text-align:center;
   font-size:0.8rem;
 }
-
-
-
-
-
-
-
-
-

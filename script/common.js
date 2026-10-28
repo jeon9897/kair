@@ -63,3 +63,13 @@ mnu.forEach(function(item){
     }
   });  
 });
+
+//로그인폼
+let id_txt = document.getElementById('username');
+let pw_txt = document.getElementById('password');
+const login_btn = document.querySelector('.btn-login');
+
+// 로그인 버튼
+login_btn.addEventListener('click', function(){
+  console.log(id_txt.value, pw_txt.value);
+});

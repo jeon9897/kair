@@ -1,0 +1,241 @@
+@charset "utf-8";
+body{background:#fff;}
+header{background:#5DB9D2;}
+main{padding:40px 0px 100px 0px;}
+
+/* 로그인 페이지 */
+#form_wrap{
+  width:80%;
+  margin:0px auto;
+}
+#form_wrap label[for='r01'], #form_wrap label[for='r02']{
+  display:inline-block;
+  width:49%;
+  line-height:50px;
+  font-weight:bold;
+  font-size:1rem;
+  text-align:center;
+  border-bottom:2px solid #ccc;
+}
+#form_wrap input[type=radio]{
+  display:none;
+}
+.tab_cont{display:none;}
+
+/* 선택한 라디오버튼의 label에 밑줄 서식 적용하기 */
+#form_wrap input[type=radio]:checked + label{
+  border-bottom:3px solid #535ae3;
+}
+
+/* 라디오버튼이 각각 선택이 되면 뒤에 있는 동생들 중에서 해당 콘텐츠가 보이게 합니다. */
+#r01:checked ~ .cont1{display:block;}
+#r02:checked ~ .cont2{display:block;}
+
+.cont1{padding-top:30px;}
+
+/* 입력 폼 스타일 */
+    .input-group {
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .input-group label .required {
+      color: #e53935;
+      font-size: 20px;
+      position: relative;
+      top:-7px;left:-10px;
+    }
+
+    .input-group input[type="text"],
+    .input-group input[type="password"] {
+      width: 100%;
+      border: none;
+      border-bottom: 1.5px solid #4e657e;
+      padding: 8px 0;
+      font-size: 16px;
+      outline: none;
+      background: transparent;
+      color: #333;
+    }
+
+    .input-group input:focus {
+      border-bottom-color: #002868;
+    }
+
+    /* 옵션 영역 (아이디 저장 / 회원가입) */
+    .options-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+      font-size: 14px;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      color: #333333;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .checkbox-label input {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+      accent-color: #002868;
+      cursor: pointer;
+    }
+
+    .signup-link {
+      color: #2b6cb0;
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+    }
+
+    .signup-link::after {
+      content: "\203A";
+      margin-left: 4px;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    /* 로그인 버튼 */
+    .btn-login {
+      width: 100%;
+      height: 48px;
+      background-color: #002366; /* 진한 파란색 */
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn-login:hover {
+      background-color: #001a4d;
+    }
+
+    /* 정보 찾기 링크 */
+    .find-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 24px;
+      margin-bottom: 36px;
+      font-size: 14px;
+    }
+
+    .find-links a {
+      color: #333333;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+
+    .find-links .divider {
+      margin: 0 16px;
+      color: #e0e0e0;
+      font-size: 12px;
+    }
+
+    /* 소셜 로그인 */
+    .social-section {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .social-title {
+      font-size: 13px;
+      color: #888888;
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 8px;
+    }
+
+    .social-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      gap: 8px;
+    }
+
+    .icon-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+    }
+
+    .social-name {
+      font-size: 12px;
+      color: #666666;
+    }
+
+    /* 소셜 개별 배경색 */
+    .icon-naver {
+      background-color: #03cf5d;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .icon-kakao {
+      background-color: #fee500;
+      color: #191919;
+    }
+
+    .icon-google {
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+    }
+
+    .icon-facebook {
+      background-color: #3b5998;
+    }
+
+    .icon-apple {
+      background-color: #000000;
+    }
+
+    /* 하단 로그인 어려움 링크 */
+    .help-link-wrapper {
+      text-align: center;
+    }
+
+    .help-link {
+      font-size: 14px;
+      color: #333333;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .help-link i {
+      font-size: 13px;
+    }
